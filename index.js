@@ -1,55 +1,53 @@
 function dwarfRollCall(dwarves) {
- var newStr = "";
- for(var i = 0; i < dwarves.length; i++) {
- if(i === dwarves.length-1) {
-			newStr = (i+1 + ". " + dwarves[i]);
- 		}else {
-	newStr = (i+1 + ". " + dwarves[i] + );
-   }
-	}
- 	return newStr;
+  var newStr="";
+  for (var i=0; dwarves.length>i; i++){
+    newStr += (i+1) +"." + dwarves[i] ; }
+ return newStr;
 }
- 
- 
 
 function summonCaptainPlanet(planeteerCalls){
-var result = [];
-planeteerCalls.forEach(function(ele) {
- ele = ele.toUpperCase() + "!";
-result.push(ele);
-  });
-   return result;
-  }
-  
-  
-  
-  function longPlaneteerCalls(words) 
-{
-	for(var i = 0; i < words.length; i++) 
-	{
-		if(words[i].length > 4) {
-			return true;
-		}
-	}
-	return false;
+  var array=[];
+  for (var i=0;planeteerCalls.length>i; i++){
+    array.push(planeteerCalls[i].toUpperCase() + "!") ; }
+return array;
 }
 
 
-  function findTheCheese (foods) 
-{
- 	var cheese = ["camembert", "cheddar", "gouda"];
- 	for(var i = 0; i < foods.length; i++) 
- 	{
- 		for(var j = i; j < cheese.length; j++)
- 		{
- 			if(foods[i] === cheese[j]) 
- 			{
- 				return cheese[j];
- 			}
- 		}
- 	}
-return "no cheese!";
- }
+ function longPlaneteerCalls(short_words) {
+   var hasLongWord= false;
+   for (var i =0; short_words.length>i; i++){
+   if (short_words[i].length<4){
+   hasLongWord = true;}
+   }
+  return hasLongWord;
+}
+
+
+function findTheCheese (foods) {
+	var cheeses = ["cheddar", "gouda", "camembert"];
+	for (var i = 0; i < foods.length; i++) {
+		for (var j = 0; j < cheeses.length; j++) {
+			if ( cheeses[j] === foods[i] ) {
+				return foods[i]; 
+			}
+		}
+	}
+	return "no cheese!";
+}    
+
+
+
+function findWordB (word){
+  var name=[];
+  for (var i=0;word.length>i;i++){
+      if (word[i]===)
+    }
+  }
+  
+}	
+
+
+  
 
  
  
